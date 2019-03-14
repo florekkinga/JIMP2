@@ -1,0 +1,3 @@
+/home/kinga/CLionProjects/palindrom/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kinga/CLionProjects/palindrom/cmake-build-debug/CMakeFiles/palindrom.dir
+/home/kinga/CLionProjects/palindrom/cmake-build-debug/CMakeFiles/edit_cache.dir
