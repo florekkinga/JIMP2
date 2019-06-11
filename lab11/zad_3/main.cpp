@@ -1,5 +1,18 @@
 #include <iostream>
+#include <string>
 using namespace std;
+
+template <class T>
+class Query {
+private:
+    string field_name;
+    string field_value;
+public:
+    Query<T>(string name, string value): field_name{name}, field_value{value} {}
+    string get_name() { return field_name; }
+    string get_value() { return field_value; }
+};
+
 template <class T>
 class Repository{
     T *list_;
@@ -24,9 +37,7 @@ public:
         return id+1;
     }
 
-    auto FindBy(Query){
-
-    }
+    virtual T FindBy(Query<T>) = 0;
 };
 
 int main() {
